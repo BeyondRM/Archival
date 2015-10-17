@@ -3,7 +3,7 @@ apply plugin:'java'
 apply plugin:'maven'
 
 String mavenGroupId = rootProject.group
-String mavenVersion = '0.1'
+String mavenVersion = rootProject.version
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
@@ -15,9 +15,10 @@ repositories {
 }
 
 dependencies {
+  compile 'abc.core:abc-constraints:0.2'
   compile 'abc.core:abc-cryptology:0.2'
   compile 'abc.core:abc-errorlogs:0.2'
-  compile 'beyondrm.platform:platform-architecture:0.1'
+  compile 'beyondrm.platform:platform-architecture:0.2'
   testCompile 'junit:junit:4.10'
 }
 

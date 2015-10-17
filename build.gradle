@@ -5,7 +5,7 @@ apply plugin: 'base' // To add 'clean' task to the root project.
 apply plugin: 'maven'
 
 group = 'beyondrm.archival'
-version = '0.1'
+version = '0.2'
 
 subprojects {
   apply from:rootProject.file('common.gradle')
@@ -24,5 +24,5 @@ task mergedJavadoc(type: Javadoc, description: 'Creates Javadoc from all the pro
 }
 
 task wrapper(type:Wrapper, description:'Creates and deploys the Gradle wrapper to the current directory.') {
-  gradleVersion = '2.5'
+  gradleVersion = '2.7'
 }
