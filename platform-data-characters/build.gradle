@@ -1,0 +1,5 @@
+//
+dependencies {
+  compile 'beyondrm.platform:platform-races:0.2'
+  compile project(':platform-screenui')
+}
