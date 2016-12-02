@@ -1,18 +1,16 @@
-//
 import org.gradle.api.artifacts.*
 
-apply plugin: 'base' // To add 'clean' task to the root project.
-apply plugin: 'maven'
-
-group = 'beyondrm.archival'
-version = '0.2'
+apply plugin:'base' // To add "clean" task to the root project.
+apply plugin:'maven'
+group='beyondrm.archival'
+version='0.2'
 
 subprojects {
   apply from:rootProject.file('common.gradle')
 }
 
-task mergedJavadoc(type: Javadoc, description: 'Creates Javadoc from all the projects.') {
-  //title = 'All modules'
+task mergedJavadoc(type:Javadoc, description:'Creates Javadoc from all the projects.') {
+  title = 'All modules'
   destinationDir = new File(project.buildDir, 'merged-javadoc')
   // Note: The closures below are executed lazily.
   source {
@@ -24,5 +22,5 @@ task mergedJavadoc(type: Javadoc, description: 'Creates Javadoc from all the pro
 }
 
 task wrapper(type:Wrapper, description:'Creates and deploys the Gradle wrapper to the current directory.') {
-  gradleVersion = '2.7'
+  gradleVersion='3.0'
 }
