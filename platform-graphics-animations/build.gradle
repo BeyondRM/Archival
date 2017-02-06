@@ -1,7 +1,7 @@
 //
 dependencies {
+  compile 'beyondrm.platform:platform-resource-graphics:0.3'
   compile project(':platform-data-graphics')
-  compile project(':platform-graphics-abstract')
   compile project(':platform-media-sounds')
   compile project(':platform-screenui')
 }
