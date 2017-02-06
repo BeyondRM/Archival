@@ -1,6 +1,7 @@
 // This list can become quite long; but we should ensure no remnants remain....
 include\
 ':platform-binary-io',\
+':platform-data-characters',\
 ':platform-data-classes',\
 ':platform-data-conditions',\
 ':platform-data-events',\
@@ -13,6 +14,8 @@ include\
 ':platform-data-vehicles',\
 ':platform-graphics-abstract',\
 ':platform-graphics-animations',\
+':platform-graphics-balloons',\
+':platform-graphics-iconsets',\
 ':platform-graphics-tilesets',\
 ':platform-i18nl10n',\
 ':platform-media-sounds',\
