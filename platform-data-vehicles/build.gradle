@@ -1,5 +1,0 @@
-//
-dependencies {
-  compile project(':platform-media-sounds')
-  compile project(':platform-screenui')
-}

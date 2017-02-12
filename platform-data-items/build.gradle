@@ -1,5 +1,0 @@
-//
-dependencies {
-  compile 'beyondrm.platform:platform-gamedata-attributes:0.2'
-  compile project(':platform-screenui')
-}

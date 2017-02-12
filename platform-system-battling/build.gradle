@@ -1,8 +1,0 @@
-//
-dependencies {
-  compile project(':platform-data-items')
-  compile project(':platform-data-skills')
-  compile project(':platform-data-variables')
-  compile project(':platform-graphics-abstract')
-  compile project(':platform-screenui')
-}
